@@ -1,0 +1,68 @@
+Delivered-To: [REDACTED]^^@^^gonzaleztroyano.es
+Received: by 2002:a05:6838:f30f:0:0:0:0 with SMTP id z15csp2748475nki;
+        Tue, 22 Mar 2022 12:10:22 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJy3+wOlfg6MS0PsN9sD0fMzvQgfTWyT4wKxmjGY2UScJHrluXd+S0iVB/YzWStH/CRv8YYR
+X-Received: by 2002:a05:6000:144a:b0:203:8688:35d with SMTP id v10-20020a056000144a00b002038688035dmr23315110wrx.399.1647976222749;
+        Tue, 22 Mar 2022 12:10:22 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1647976222; cv=none;
+        d=google.com; s=arc-20160816;
+        b=j0gGDypbVDfkm0vXw3WpWITbHUUBHl3bUQ2wjqV7N0PU6F4BSxg1C6oHayM3TjzSYE
+         /lCD03MXHT6sLtl1sKd/bhzTGGszy4L084p7/ifohb4pg7PKiwDjKbq/ZEVD/+TV5hsB
+         5PEfpnc/lVqakgvfaWXnOoSlJxeHLIrv73C4RopTwaGCHXFlFn/A6JmvMzvmYtiBEag+
+         D5eGZYlV4zC+6wYLnOIhW+xZm5lJE9ZoaSpUEo/WAfOVTuqJ70nYetXVX+Bh2EjeI0Zx
+         gXH0A+oxv5RaeAruYNxeGYjcKofxW1+mBSl5yHwaSnp884ZAKDODxgjZlnLH6QTophOt
+         +GYw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-language:content-transfer-encoding:mime-version:user-agent
+         :date:message-id:subject:from:to:dkim-signature;
+        bh=DMswiTobi3CTIswkfkqpw8IocrgObMlAL8GObemSRCk=;
+        b=gJYLEn89ySDfHYvkdNDI7eYBPBJ2jvLkg+fBk72jkvoAQLzUX/HUZMjpQQfnY9lrnK
+         96TF+L5D6zYrcuNMkWgs49ZZWSCkQ+tenQlfujVm3hISjBqvBNaJmYVmQnbfJJ6Fp4NQ
+         3lbz6q47ocu8GPVrV1vRvqquZwu8gDTU8MS16bJpmiCFOYvDKNh0TT1fOcfYU78JU0Oz
+         O4SqG/G2Nk+C/M16SqyRwLOIYF23TpVi2918471DRaqwkXecFzipLROyYKBR8FcDpREV
+         ZjbovUgFbW+iw2sO0lToBuyh7YF54rDl8a2KddCJOsUOEJw80jn25uqDpzdvQDTywdQI
+         OgUA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@carpet4you.site header.s=glezcloud header.b=0nhJoLiB;
+       spf=pass (google.com: domain of pablo^^@^^carpet4you.site designates 93.189.91.9 as permitted sender) smtp.mailfrom=pablo^^@^^carpet4you.site
+Return-Path: <pablo^^@^^carpet4you.site>
+Received: from mail.glez.cloud (mail.glez.cloud. [93.189.91.9])
+        by mx.google.com with ESMTPS id 9-20020a05600c028900b0038c77be9cfbsi2812221wmk.195.2022.03.22.12.10.22
+        for <[REDACTED]^^@^^gonzaleztroyano.es>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Tue, 22 Mar 2022 12:10:22 -0700 (PDT)
+Received-SPF: pass (google.com: domain of pablo^^@^^carpet4you.site designates 93.189.91.9 as permitted sender) client-ip=93.189.91.9;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@carpet4you.site header.s=glezcloud header.b=0nhJoLiB;
+       spf=pass (google.com: domain of pablo^^@^^carpet4you.site designates 93.189.91.9 as permitted sender) smtp.mailfrom=pablo^^@^^carpet4you.site
+Received: from [127.0.0.1] (localhost [127.0.0.1]) by localhost (Mailerdaemon) with ESMTPSA id 971126EDDF
+	for <[REDACTED]^^@^^gonzaleztroyano.es>; Tue, 22 Mar 2022 20:10:21 +0100 (CET)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=carpet4you.site;
+	s=glezcloud; t=1647976221;
+	h=from:subject:date:message-id:to:mime-version:content-type:
+	 content-transfer-encoding:content-language;
+	bh=DMswiTobi3CTIswkfkqpw8IocrgObMlAL8GObemSRCk=;
+	b=0nhJoLiBvQvX27Hb7PRoD8oatksr90fzbhSBqcM7XeGJCxRbqwvW00z1ZYSajS4SorAmLV
+	4RjuSPxSvJdAX50FDbDe0lkpRJzs3PBqVIkA51bTHA8ij5hWDn1b8fXfnqFRVXM9oK3A8x
+	n7NPcd3mXW5eUl0f//I0X1RA1zUH8qw=
+To: [REDACTED]^^@^^gonzaleztroyano.es
+From: =?UTF-8?Q?Pablo_Gonz=c3=a1lez?= <pablo^^@^^carpet4you.site>
+Subject: =?UTF-8?Q?Prueba_de_env=c3=ado_desde_Thunderbird?=
+Message-ID: <3a043d9b-d083-071f-23d0-5fff41a5b0f4@carpet4you.site>
+Date: Tue, 22 Mar 2022 20:10:23 +0100
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101
+ Thunderbird/78.14.0
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8; format=flowed
+Content-Transfer-Encoding: 8bit
+Content-Language: en-US
+X-Last-TLS-Session-Version: TLSv1.3
+
+¡Hola!
+
+Este correo electrónico se envía desde Thunderbird.
+
+Un saludo,
+
+Pablo González
+

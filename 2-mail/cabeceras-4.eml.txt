@@ -1,0 +1,73 @@
+Delivered-To: [REDACTED]^^@^^gonzaleztroyano.es
+Received: by 2002:a05:6838:f30f:0:0:0:0 with SMTP id z15csp4728466nki;
+        Thu, 24 Mar 2022 13:26:55 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJyFroezqSJ7A8cqUIrYZv9kxe4r/DuulJKTJ34KtvE0m5kRJeuhbIhTt5c3CaGwxcfMdws1
+X-Received: by 2002:a05:6000:188d:b0:205:1242:485a with SMTP id a13-20020a056000188d00b002051242485amr6288513wri.495.1648153615751;
+        Thu, 24 Mar 2022 13:26:55 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1648153615; cv=none;
+        d=google.com; s=arc-20160816;
+        b=VJHghUe4ngr3cKsip+YzDYv3JbTpacSwRsm+nlrP+BtQbzqy8xddCa5WUFFY4888Yi
+         9TqPf8FuKZMkR/gUogdez+4WtOoii/bKTvHkq0XJ5X6gJMPF+vwIimjXJE4b16E2aPeH
+         IXULYPWnZBI6fSGe0FJBjO2d93JjKNb4GuVBW1WYZWAL5IkQoCr0wo+IxGET35yB4YU1
+         HP/7e7jkHj9ZRV2LFvSOwudN9rSW+WLjQcfF9bLU92TRvrNa6HALz7CXaWWVETemvfsB
+         rtCF6Mm15AFumsmQJ+9jqpxLQ1/gf1KS4nnHS28HIoC3OQrkKM5q3415q9S3Ot04fMcI
+         OXww==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=message-id:subject:date:mime-version:user-agent:to:from
+         :dkim-signature;
+        bh=GniEBdD3k5yKjzXTk9Uqt22hAafoJYGpUjk3RUF4hcc=;
+        b=Lv4//Wv/Y6X0Cr6NCnRx8uGeiLH3ORBdpHheuEe90GDx/EWewHj0jIjf9+DkGEgA80
+         Ea7nLKz5BPTmXQijsbp//KXTq/BLlnMMzpQ/uikiW/kwf3fGYI+qCaI3ch2kWvmy+hRG
+         FTeSmRhq0rEUQpUjTy/uS6FlOnJHC+gFvRtkQoOTNv8niwmnfsPXV+ceYfyH38T3zXms
+         sWSCreTrkO82n9IojRD0JPqAacmbQWvE4yu9VyEtBMEn1AKVbjiYbSjxlyjIogtKt3zl
+         zRLSSPImQ42qQo6vc9ALlzTp1ir/vdkSH1yc8kjUNGXmVquJHoqK8Mnu/YLQ0Kq1veGN
+         fdvQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@glez-cloud.tech header.s=glez-cloud header.b=fqHXTYv0;
+       spf=neutral (google.com: 93.189.91.9 is neither permitted nor denied by best guess record for domain of ricardo^^@^^glez-cloud.tech) smtp.mailfrom=ricardo^^@^^glez-cloud.tech
+Return-Path: <ricardo^^@^^glez-cloud.tech>
+Received: from mail.glez.cloud (mail.glez.cloud. [93.189.91.9])
+        by mx.google.com with ESMTPS id v16-20020adf8b50000000b00203edc2437csi605243wra.586.2022.03.24.13.26.55
+        for <[REDACTED]^^@^^gonzaleztroyano.es>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Thu, 24 Mar 2022 13:26:55 -0700 (PDT)
+Received-SPF: neutral (google.com: 93.189.91.9 is neither permitted nor denied by best guess record for domain of ricardo^^@^^glez-cloud.tech) client-ip=93.189.91.9;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@glez-cloud.tech header.s=glez-cloud header.b=fqHXTYv0;
+       spf=neutral (google.com: 93.189.91.9 is neither permitted nor denied by best guess record for domain of ricardo^^@^^glez-cloud.tech) smtp.mailfrom=ricardo^^@^^glez-cloud.tech
+Received: from [127.0.0.1] (localhost [127.0.0.1]) by localhost (Mailerdaemon) with ESMTPA id F1F1A6E07D
+	for <[REDACTED]^^@^^gonzaleztroyano.es>; Thu, 24 Mar 2022 21:26:54 +0100 (CET)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=glez-cloud.tech;
+	s=glez-cloud; t=1648153615;
+	h=from:subject:date:message-id:to:mime-version:content-type;
+	bh=GniEBdD3k5yKjzXTk9Uqt22hAafoJYGpUjk3RUF4hcc=;
+	b=fqHXTYv0z8BU1Nek4tt83hdtUuJWziW/6pvfC7Pzi49YahGoseIlC6LIrucAClleEXu271
+	tl0AeCVihzZ2JiowClekPP6qQyAYO/zDjgNljgCUmj5Ea9hhP5DtuZHxdWY1nQnbqck56V
+	OgF985JxBPOoxd2Ci86og24o74htRFA=
+From: =?utf-8?q?Ricardo_Felipe_Jos=C3=A9_Gonz=C3=A1lez_Fern=C3=A1ndez?= <ricardo^^@^^glez-cloud.tech>
+To: [REDACTED]^^@^^gonzaleztroyano.es
+User-Agent: SOGoMail 5.5.0
+MIME-Version: 1.0
+Date: Thu, 24 Mar 2022 21:26:54 +0100
+Subject: Prueba de =?utf-8?q?env=C3=ADo?= desde la cuenta de Ricardo
+Message-ID: <44-623cd400-7-5c0e2f80@125697113>
+Content-Type: multipart/alternative; boundary="----=_=-_OpenGroupware_org_NGMime-68-1648153614.552799-2------"
+X-Last-TLS-Session-Version: None
+
+------=_=-_OpenGroupware_org_NGMime-68-1648153614.552799-2------
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+Content-Length: 12
+
+
+=C2=A1Hola!
+
+------=_=-_OpenGroupware_org_NGMime-68-1648153614.552799-2------
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+Content-Length: 31
+
+<html><p>=C2=A1Hola!</p></html>
+
+------=_=-_OpenGroupware_org_NGMime-68-1648153614.552799-2--------
+

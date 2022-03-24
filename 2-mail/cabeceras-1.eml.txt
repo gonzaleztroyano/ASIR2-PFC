@@ -1,0 +1,81 @@
+Delivered-To: [REDACTED]^^@^^gonzaleztroyano.es
+Received: by 2002:a05:6838:f30f:0:0:0:0 with SMTP id z15csp1845841nki;
+        Mon, 21 Mar 2022 11:34:30 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJywmWEb/LBtIQx+LUWCRCz4ntqTjXnhzB+HMgdipUhMnmG3TIqvuRyL4+2mPqbIu6DFOJ7V
+X-Received: by 2002:a05:600c:4e0f:b0:38c:b6d9:511b with SMTP id b15-20020a05600c4e0f00b0038cb6d9511bmr124822wmq.96.1647887669934;
+        Mon, 21 Mar 2022 11:34:29 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1647887669; cv=none;
+        d=google.com; s=arc-20160816;
+        b=pZIyeiVNpEqZl8PUzEcqDdh2sxz+0phiG1hbk/Flr8ZWJ17UhWaisv3xzP1GHxvmbf
+         JEk5UCinVVm7pEe6FYakYT5/b1is6st4uBUWWuDszselvTFZWHMcrV1Jm0TANjMHLP0/
+         95v28YFOvnYKp1cOtSGxBgiKsrOXGeJugFsmPAqII0626b+VHg5O16OJDwyqsyLXkoHO
+         iSH/x8J08PptccxxuPk2fgAbvWxStHAxF3+PYzHITHMkWvnqz7hfzcnq6qS/ET6F24Xb
+         u3fEN9kObX1OpyP7PGZwncHEAWmPRQjvt3JnjvWpksZ6Fas1lIB6W8kD6oG8HHHqoNnO
+         scJQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=message-id:subject:date:mime-version:user-agent:to:from
+         :dkim-signature;
+        bh=ydTvrRvaL6epW+mSA2PptNZuH6FPXFIyicuu785ZKAA=;
+        b=NqjO3uvjSmWIWZtzg+bG4nMo34BUPYWQJWwXcwxCvJxb+D5hw9PH4OyCkhGqmky/Az
+         gE+0iORFMVxobZrTjhXtfmyGfCu0JDokJYhc5vu3byeENMC2QMugqnFclrtbHnnM9sI5
+         wHAmcyvijpSa52oO63BqAQw5Smt8ZdtOu2oUHRkKOe7mjWXk5BrMBGpeUU2XCQdZzHtW
+         qUg/u0naXlXGxj9ET+EEl2rcXLyv4CI7BA3xnpxqDE+oUDYI5C53V2VB/mTFRN4Lo9hG
+         8m5SrdUX+FGZCofuJfvcPDiJF1ppGzE5OpRDdEE4bvd0tWMTckkiUe4j7UaT+0QhJPFQ
+         QmzA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@carpet4you.site header.s=glezcloud header.b=DemdnIGl;
+       spf=pass (google.com: domain of pablo^^@^^carpet4you.site designates 93.189.91.9 as permitted sender) smtp.mailfrom=pablo^^@^^carpet4you.site
+Return-Path: <pablo^^@^^carpet4you.site>
+Received: from mail.glez.cloud (de2afb89-06d4-4df5-a344-0d24c913351e.clouding.host. [93.189.91.9])
+        by mx.google.com with ESMTPS id w9-20020a5d6089000000b00203e9019308si7283664wrt.140.2022.03.21.11.34.29
+        for <[REDACTED]^^@^^gonzaleztroyano.es>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Mon, 21 Mar 2022 11:34:29 -0700 (PDT)
+Received-SPF: pass (google.com: domain of pablo^^@^^carpet4you.site designates 93.189.91.9 as permitted sender) client-ip=93.189.91.9;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@carpet4you.site header.s=glezcloud header.b=DemdnIGl;
+       spf=pass (google.com: domain of pablo^^@^^carpet4you.site designates 93.189.91.9 as permitted sender) smtp.mailfrom=pablo^^@^^carpet4you.site
+Received: from [127.0.0.1] (localhost [127.0.0.1]) by localhost (Mailerdaemon) with ESMTPA id E42436E804
+	for <[REDACTED]^^@^^gonzaleztroyano.es>; Mon, 21 Mar 2022 19:34:28 +0100 (CET)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=carpet4you.site;
+	s=glezcloud; t=1647887669;
+	h=from:subject:date:message-id:to:mime-version:content-type;
+	bh=ydTvrRvaL6epW+mSA2PptNZuH6FPXFIyicuu785ZKAA=;
+	b=DemdnIGlvNPVo0LdEKCumDUV7JF0efDRoPxrWOvm9gJN8hJKyLIGrYUA4qUS4nYrjx7V09
+	Ucruh1U4Ef8upYIl6hrjqn8u3q9Sz0g6XK4+fQk774Z6afrCU6TZfB3hOx6az5F0L6vk0B
+	noSa0ftck6Nh73dqCgabBdqVPvzgcdQ=
+From: =?utf-8?q?Pablo_Gonz=C3=A1lez?= <pablo^^@^^carpet4you.site>
+To: [REDACTED]^^@^^gonzaleztroyano.es
+User-Agent: SOGoMail 5.5.0
+MIME-Version: 1.0
+Date: Mon, 21 Mar 2022 19:34:28 +0100
+Subject: TEST de =?utf-8?q?env=C3=ADo?= desde Mailcow
+Message-ID: <3c-6238c500-7-672a0300@214315766>
+Content-Type: multipart/alternative; boundary="----=_=-_OpenGroupware_org_NGMime-60-1647887668.466402-1------"
+X-Last-TLS-Session-Version: None
+
+------=_=-_OpenGroupware_org_NGMime-60-1647887668.466402-1------
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+Content-Length: 115
+
+
+=C2=A1Hola!
+
+Esto es un mensaje de prueba sin mayor importancia. =C2=A1Veamos como l=
+lega!
+
+Un saludito,
+Pablito
+
+------=_=-_OpenGroupware_org_NGMime-60-1647887668.466402-1------
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+Content-Length: 155
+
+<html>=C2=A1Hola!<br /><br />Esto es un mensaje de prueba sin mayor imp=
+ortancia. =C2=A1Veamos como llega!<br /><br />Un saludito,<br />Pablito=
+</html>
+
+------=_=-_OpenGroupware_org_NGMime-60-1647887668.466402-1--------
+

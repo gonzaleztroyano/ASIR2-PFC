@@ -1,0 +1,130 @@
+Return-Path: <pablo.[REDACTED]*^^@^^educa.madrid.org>
+Delivered-To: pablo[RED]*^^@^^carpet4you.site
+Received: from mail.glez.cloud ([172.22.1.253])
+	by 724f009ff4cf with LMTP
+	id KO/KLMPHNWIoDwAAuXvktg
+	(envelope-from <pablo.[REDACTED]*^^@^^educa.madrid.org>)
+	for <pablo[RED]*^^@^^carpet4you.site>; Sat, 19 Mar 2022 13:08:35 +0100
+Received: from mx02.puc.rediris.es (outbound2sev.lav.puc.rediris.es [130.206.19.171])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)
+	 key-exchange X25519 server-signature RSA-PSS (4096 bits) server-digest SHA256)
+	(No client certificate requested)
+	by mail.glez.cloud (Postcow) with ESMTPS id 217F36E8E4
+	for <pablo[RED]*^^@^^carpet4you.site>; Sat, 19 Mar 2022 13:08:35 +0100 (CET)
+Received: from smtp.educa.madrid.org ([193.146.123.99])
+	by mx02.puc.rediris.es  with ESMTP id 22JC8VaV017481-22JC8VaW017481
+	for <pablo[RED]*^^@^^carpet4you.site>; Sat, 19 Mar 2022 13:08:31 +0100
+Received: (qmail 26008 invoked from network); 19 Mar 2022 12:08:31 -0000
+Received: from unknown (HELO WEBMAIL) ([172.16.2.201])
+          (envelope-sender <pablo.[REDACTED]*^^@^^educa.madrid.org>)
+          by 0 (qmail-ldap-1.03) with SMTP
+          for <pablo[RED]*^^@^^carpet4you.site>; 19 Mar 2022 12:08:31 -0000
+MIME-Version: 1.0
+Date: Sat, 19 Mar 2022 13:08:31 +0100
+From: =?UTF-8?Q?Pablo_Gonz=C3=A1lez_Troyano?=
+ <pablo.[REDACTED]*^^@^^educa.madrid.org>
+To: Pablo <pablo[RED]*^^@^^carpet4you.site>
+Subject: Fwd: TEST desde EducaMadrid
+In-Reply-To: <2ad0254ad0f21f91ba33c0ce5b8e9b50@educa.madrid.org>
+References: <2ad0254ad0f21f91ba33c0ce5b8e9b50@educa.madrid.org>
+User-Agent: CorreoWeb EducaMadrid
+Message-ID: <b56252f6560ba2b990199de382e11fca@educa.madrid.org>
+X-Sender: pablo.[REDACTED]*^^@^^educa.madrid.org
+Organization: Comunidad de Madrid. EducaMadrid.
+X-Remote-Browser: Mozilla/5.0 (X11; CrOS x86_64 14469.41.0) AppleWebKit/537.36
+ (KHTML, like Gecko) Chrome/99.0.4844.57 Safari/537.36
+X-Originating-IP: [79.116.7.222]
+X-Webmail-Server: 172.16.2.201
+Content-Type: multipart/alternative;
+ boundary="=_c927eca8e881b2dbd59297847775eb5c"
+X-FE-Policy-ID: 23:14:2:educa.madrid.org
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; d=educa.madrid.org; s=dkim_educamadrid; c=relaxed/relaxed;
+ h=mime-version:date:from:to:subject:references:message-id:content-type;
+ bh=de4aaNZrbBqOanRa45Nz5K2tGmAbMzk5nCoqxoXbEho=;
+ b=AYkzUrnphGScZdF7iA6cApC2bIPwIztNJOF73fDzyQHohgZAHnZkG23tGECQrajTXvs461axYFRW
+	9gSuL9QQ1E7Q11nmxaUDvC3Fsdny0Y1tjZ8/kjvoS5oekBd9+kZe5TXc+KFNVsvQakKZlmEbkzD0
+	tVHRB1Gjnd6l5onSLKM1pdNUhkLXFC+SgVSH+M/EFusEnwvnRVkaPIodYSqx+3OLSxdtFuf3EHCd
+	Yt68XQtJHEw2ighP6Rnii+CImYihkxeLbHUo7CGAX1ipvB5OUO+RbheYJVaokwV29afda3NZKV60
+	pfOJKS44ZGcaUvrwK2lDvlFV6fR3kPMGL5sEjA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=carpet4you.site;
+	s=glezcloud; t=1647691715;
+	h=from:from:reply-to:subject:subject:date:date:message-id:message-id:
+	 to:to:cc:mime-version:mime-version:content-type:content-type:
+	 in-reply-to:in-reply-to:references:references:dkim-signature;
+	bh=de4aaNZrbBqOanRa45Nz5K2tGmAbMzk5nCoqxoXbEho=;
+	b=D/840mXK3aG+xqOA/enS+N5j/ddr2KIB4T34+FeKWje9/QM0nK6LOYuqTPbZ8cc8L+ULl3
+	uuF/eQsyKRHyihp5d3d7OxBFOJDsVzMbU1ik2mAdTEmmnzsexnJj5QUYjsVL08anb10I3C
+	XAmrJpux6XZl0IDK+4UdNmEXu1lToOw=
+ARC-Seal: i=1; s=glezcloud; d=carpet4you.site; t=1647691715; a=rsa-sha256;
+	cv=none;
+	b=KNwXUl6SBByUxgWWw6bbzcz1TPvQjh/Hx48Vv86lwEwXtzX/LXIQYFPOm16adbw6NTrB5v
+	LfmXtlK8E7mz9pgKQNxSX0eKV9VrPNz8aRrYSgV7at9Y608d/p3hYMdQhQ4+Yp6FoVQUXm
+	6DGC7niSYkwXdSzUpD4e5KCz1Ch4ST0=
+ARC-Authentication-Results: i=1;
+	mail.glez.cloud;
+	dkim=pass header.d=educa.madrid.org header.s=dkim_educamadrid header.b=AYkzUrnp;
+	dmarc=pass (policy=reject) header.from=madrid.org;
+	spf=pass (mail.glez.cloud: domain of pablo.[REDACTED]*^^@^^educa.madrid.org designates 130.206.19.171 as permitted sender) smtp.mailfrom=pablo.[REDACTED]*^^@^^educa.madrid.org
+X-Last-TLS-Session-Version: TLSv1.3
+X-Spamd-Result: default: False [-2.00 / 15.00];
+	DWL_DNSWL_LOW(-1.00)[madrid.org:dkim];
+	DMARC_POLICY_ALLOW(-0.50)[madrid.org,reject];
+	R_SPF_ALLOW(-0.20)[+ip4:130.206.19.0/24:c];
+	R_DKIM_ALLOW(-0.20)[educa.madrid.org:s=dkim_educamadrid];
+	MIME_GOOD(-0.10)[multipart/alternative,text/plain];
+	MX_GOOD(-0.01)[];
+	XM_UA_NO_VERSION(0.01)[];
+	BCC(0.00)[];
+	HAS_XOIP(0.00)[];
+	FROM_HAS_DN(0.00)[];
+	TO_MATCH_ENVRCPT_ALL(0.00)[];
+	ARC_NA(0.00)[];
+	RCPT_COUNT_ONE(0.00)[1];
+	PREVIOUSLY_DELIVERED(0.00)[pablo[RED]*^^@^^carpet4you.site];
+	RCPT_MAILCOW_DOMAIN(0.00)[carpet4you.site];
+	RCVD_TLS_LAST(0.00)[];
+	ASN(0.00)[asn:766, ipnet:130.206.0.0/16, country:ES];
+	RCVD_COUNT_THREE(0.00)[3];
+	HAS_ORG_HEADER(0.00)[];
+	ARC_SIGNED(0.00)[carpet4you.site:s=glezcloud:i=1];
+	MID_RHS_MATCH_FROM(0.00)[];
+	TO_DN_ALL(0.00)[];
+	FROM_EQ_ENVFROM(0.00)[];
+	DKIM_TRACE(0.00)[educa.madrid.org:+];
+	MIME_TRACE(0.00)[0:+,1:+,2:~];
+	RWL_MAILSPIKE_VERYGOOD(0.00)[130.206.19.171:from]
+X-Rspamd-Queue-Id: 217F36E8E4
+Authentication-Results: mail.glez.cloud;
+	dkim=pass header.d=educa.madrid.org header.s=dkim_educamadrid header.b=AYkzUrnp;
+	dmarc=pass (policy=reject) header.from=madrid.org;
+	spf=pass (mail.glez.cloud: domain of pablo.[REDACTED]*^^@^^educa.madrid.org designates 130.206.19.171 as permitted sender) smtp.mailfrom=pablo.[REDACTED]*^^@^^educa.madrid.org
+
+--=_c927eca8e881b2dbd59297847775eb5c
+Content-Transfer-Encoding: 8bit
+Content-Type: text/plain; charset=UTF-8;
+ format=flowed
+
+Hola desde EducaMadrid
+
+---
+PABLO GONZÃLEZ TROYANO
+pablo.[REDACTED]*^^@^^educa.madrid.org
+2Âº ASIR
+IES Villablanca, Madrid
+--=_c927eca8e881b2dbd59297847775eb5c
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=UTF-8
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3DUTF-8" /></head><body style=3D'font-size: 10pt; font-family: Arial,Helve=
+tica,sans-serif'>
+<p><br /></p>
+<div id=3D"forwardbody1">
+<div style=3D"font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">
+<p>Hola desde EducaMadrid</p>
+
+</div>
+</div>
+</body></html>
+
+--=_c927eca8e881b2dbd59297847775eb5c--
