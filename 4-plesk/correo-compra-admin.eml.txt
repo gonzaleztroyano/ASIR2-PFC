@@ -1,0 +1,340 @@
+Delivered-To: REDACTED[*@^]gonzaleztroyano.es
+Received: by 2002:a05:6838:138e:0:0:0:0 with SMTP id i14csp413975nkp;
+        Wed, 4 May 2022 06:38:44 -0700 (PDT)
+X-Received: by 2002:a05:6402:2714:b0:427:b9bb:a179 with SMTP id y20-20020a056402271400b00427b9bba179mr17888973edd.102.1651671523987;
+        Wed, 04 May 2022 06:38:43 -0700 (PDT)
+ARC-Seal: i=3; a=rsa-sha256; t=1651671523; cv=pass;
+        d=google.com; s=arc-20160816;
+        b=sCHEiHdi8l668+JPYXgDIaJ1lzHs+A9C5QMOsmp+wDtyHAh218VVaGmAslJ57YAaXN
+         QkGk8P0uBlMSYfxsCYu7g4skR0AfbX/pjtPFb6ZEtZ6uuV+++TfXqFj2wXYKQ1hNs8No
+         v2BJEI7PIl7zyq3hBu1C0PPFGyS1rVk6drERhnexUd94iPwYTIBXAmTTCm8VuJUAy3kF
+         mFtRs7lg2unIgLT+xmuVGiiyygon5bn2LFjSpDZvWdxjvYbAI3IOTXSY3qbpf6JCqaKe
+         OnGwda3Rbs3+0sw8gsTYWBb2X1OrWwvfx9pg18GLtbjPanRKYz+U4w+inK++Y9GvW+XK
+         UrOg==
+ARC-Message-Signature: i=3; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=list-unsubscribe:from:feedback-id:list-unsubscribe-post
+         :mime-version:content-transfer-encoding:reply-to:origin-messageid
+         :message-id:subject:date:to:dkim-signature;
+        bh=08hofk0u8KPwn94aKMY5/CSEAL+TFcBCQGJoRRf3HoI=;
+        b=WBeDvd8vZ7TVgKZAUAhzQg1EobFcZ81vAilg59WmaEu01koZK2HWuPi0RhJC1xKH1C
+         PuXO5X8MdGWrNIgEKBa9TTdLjT1KAKOCD/EO//bB994F5HnJ28W8P6swLCaLhicriCY9
+         ePnCYMz0EGA+j/WrGQgpetEa9Sl9wpMIZzAWEAvMeb/zUC+0bCiUrs0FSJhWUxdbVa4q
+         1UAVOV1p8ubPkUucanA2m6TSDiOX0WRv8TZwpP51mMR6N1oxrm0BkyPdUrJ1kdytjD6a
+         h/OWmHi4tHR04sjbMbDbzfJqVsrMrCa/m6vkaja9vFv9szO7OR9u2sKcxIGewwEfH1B0
+         5fRw==
+ARC-Authentication-Results: i=3; mx.google.com;
+       dkim=fail header.i=[*@^]glez.cloud header.s=mail header.b=KCdW5ej+;
+       arc=pass (i=2 spf=pass spfdomain=aa.d.sender-sib.com dkim=pass dkdomain=glez.cloud);
+       spf=softfail (google.com: domain of transitioning bounces-136652878-soporte=glez.cloud[*@^]aa.d.sender-sib.com does not designate 209.85.220.69 as permitted sender) smtp.mailfrom="bounces-136652878-soporte=glez.cloud[*@^]aa.d.sender-sib.com"
+Return-Path: <bounces-136652878-soporte=glez.cloud[*@^]aa.d.sender-sib.com>
+Received: from mail-sor-f69.google.com (mail-sor-f69.google.com. [209.85.220.69])
+        by mx.google.com with SMTPS id e12-20020a50a68c000000b00425b5c6f02asor5520296edc.14.2022.05.04.06.38.43
+        for <REDACTED[*@^]gonzaleztroyano.es>
+        (Google Transport Security);
+        Wed, 04 May 2022 06:38:43 -0700 (PDT)
+Received-SPF: softfail (google.com: domain of transitioning bounces-136652878-soporte=glez.cloud[*@^]aa.d.sender-sib.com does not designate 209.85.220.69 as permitted sender) client-ip=209.85.220.69;
+Authentication-Results: mx.google.com;
+       dkim=fail header.i=[*@^]glez.cloud header.s=mail header.b=KCdW5ej+;
+       arc=pass (i=2 spf=pass spfdomain=aa.d.sender-sib.com dkim=pass dkdomain=glez.cloud);
+       spf=softfail (google.com: domain of transitioning bounces-136652878-soporte=glez.cloud[*@^]aa.d.sender-sib.com does not designate 209.85.220.69 as permitted sender) smtp.mailfrom="bounces-136652878-soporte=glez.cloud[*@^]aa.d.sender-sib.com"
+ARC-Seal: i=2; a=rsa-sha256; t=1651671523; cv=pass;
+        d=google.com; s=arc-20160816;
+        b=JSrjRA46leNRU7CVcOVsGxMuEp1UAwVkKYTZZPupYmyy8sIVGKghuLMYAts011fFOI
+         nSdFAkvmuuzdXnQc51ttZckc5qwQsB5CsbLhbIW/WtlGIkhmcXEicowSpQuhTXl3z6yC
+         ZshXGBQ3PpfiIY0H7K58XIyZBH+O3VMfyWiSBIUizPvcX83Lz0wQbgcmdBsv8Qv8b1C4
+         nin9u3nDpsv7qYruygDMIYITeXEEDxGsRZl8NiZkvCRhO8Z139GyKTFGld412kll5xfJ
+         RzeayctFTbjTb7ygM8MLNqhJj6+Cjjaf/HtBl2KRjLDEqqffBvBWaKLdj4E9w6KjrwOo
+         UaxQ==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=list-unsubscribe:from:feedback-id:list-unsubscribe-post
+         :mime-version:content-transfer-encoding:reply-to:origin-messageid
+         :message-id:subject:date:to:dkim-signature;
+        bh=08hofk0u8KPwn94aKMY5/CSEAL+TFcBCQGJoRRf3HoI=;
+        b=CM//lxtWrbnNUWzmhF42SUGn7SHCLlPFWJX7a0k2hNtHzNyPuYmY5UtGOcijGlKtJq
+         GRgW4ADvCk0YxOQpKCDYrjbxZl1bhZIl/ET0mcJA3KvEsTXNVBP9Gh57KzmrrSdp0uHK
+         Uott7yHMbz4zMMIqN/+lzPNhmJoZ0Mz4dBuooBaplZNz31SPIXf7xKEkk3J1JAWvb2gN
+         p/j7M0cFZFbS6yeZpLleCxICniZzKtt+JQ1EjhN2WZzbk0oL6SrkXAJTObJ2seXtnn9E
+         VZR8zyNZwmUt0nHO4xRizbt7/JQEE+pWh2RfV18y+2PGxpjLRPIgHgoUL84/Iejpg+MF
+         YS0w==
+ARC-Authentication-Results: i=2; mx.google.com;
+       dkim=pass header.i=[*@^]glez.cloud header.s=mail header.b=KCdW5ej+;
+       spf=pass (google.com: domain of bounces-136652878-soporte=glez.cloud[*@^]aa.d.sender-sib.com designates 185.41.28.128 as permitted sender) smtp.mailfrom="bounces-136652878-soporte=glez.cloud[*@^]aa.d.sender-sib.com"
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=x-gm-message-state:dkim-signature:to:date:subject:message-id
+         :origin-messageid:reply-to:content-transfer-encoding:mime-version
+         :list-unsubscribe-post:feedback-id:from:list-unsubscribe;
+        bh=08hofk0u8KPwn94aKMY5/CSEAL+TFcBCQGJoRRf3HoI=;
+        b=hkHzXhVkn2XioLG6pAW8RMc9aVaBEnWrX6ypIP/+bEqcIfoBkmvgjRllrSHBhQdoy7
+         s/49CyFypa/dihYcmg6/beV5s0x9U3Uxmum92nqosU1vupNGYXWPhJXSDUTfUcpprWRj
+         ZMYmjt22iDsoQGGoh2SZi+aBKTS71w9Fy0+JPyFqPEjBPPO16vsqCK7tM5q6pkDCArqc
+         gsl1LLr5wl7l9x9Mz7bNUQcsJL+9JDVe+y2Xe1R+5nsHJvuK4ooJskGdoFfbyqCX10bP
+         AcuPj38tihi+Qs58o5sa+YYuijJgzuDxWoLXYYjajWey5hENV34+5o9tW+R3tdzo1mXI
+         8FdA==
+X-Gm-Message-State: AOAM530V0Lmv+idYrZXCWL3iUKHGN6BmsDrFsioyj6tNebibGcLXm4qX
+	r2ISDNI3sXgT7IOl9/A2E5PACorLhnXOuJf8EfGTxIjb/BbODzBTPeTd/mPnSyo7wyCtt0pn+Re
+	vHCF4RFG/ALu5SIG8BOzAodXM9BEoeTdSnFs=
+X-Received: by 2002:a05:6402:27c9:b0:427:ba7f:6288 with SMTP id c9-20020a05640227c900b00427ba7f6288mr17286130ede.416.1651671523413;
+        Wed, 04 May 2022 06:38:43 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJwR99dIt3Hzwjg7wGLaKQ7fJI4rbwQ6VcQBmN21YYeSP14lnZ63HR4vsX1AB0kKS5pWwfob
+X-Received: by 2002:a05:6402:27c9:b0:427:ba7f:6288 with SMTP id c9-20020a05640227c900b00427ba7f6288mr17285912ede.416.1651671519925;
+        Wed, 04 May 2022 06:38:39 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1651671519; cv=none;
+        d=google.com; s=arc-20160816;
+        b=yuZpAQweetGgtwueyWMvqe/DZRRsTmmBOAalhZ8IQX12ndhUr52er6ZO4LsU20l6zU
+         /D99wEFqM9LwNy848dmfM3I4GKRtMRmr97xVsr+k9AuSEX8xyTAT633PYE8McdnF7I24
+         VvGXMmKSB0iuHa8T9B2mLG7vNUi1lIkyaLlWYZ+08GanEaHBqtzKZEW1oqoS5AMNW6rf
+         D8v9IIuJYdV6posot/RABFdw4GDGirDKHbWL4F7QwfIT1ZgGi0pgf2pQqiipAA0IrdD3
+         r9ENzvkFyqydGUSKnCaEA35r6ktCzf2kLm/VihpIN+BJuDILFr+tV+a9K+E5MWjmQUF3
+         XABQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=list-unsubscribe:from:feedback-id:list-unsubscribe-post
+         :mime-version:content-transfer-encoding:reply-to:origin-messageid
+         :message-id:subject:date:to:dkim-signature;
+        bh=08hofk0u8KPwn94aKMY5/CSEAL+TFcBCQGJoRRf3HoI=;
+        b=dR1KdfQHqUY5qt/tBq/P/sCz1+b+cg3LddfkCv3pvltBSJH/cf3pADim6wAnoA3rC6
+         1bY0j89x3Fm17redtd5eIEaS11BSOyiQO4HISbPLnl2VQPjVl8khAby6OQC5IBJowR6M
+         Te/HwobHrvs8VWXLHsbVc35r35SjrtK6KjX9f14zj7dqubEFXDq+AQyA777LDDgeYh2Y
+         4SiMFBa34PvZSpYL2WPynm4N5gSnWPB0x+nkV6fJgAaUblb7LlNfjh6dUencfqWzXI/Q
+         zRyA0SJtyX//IqujWUhw0PmLLyZkh2pEd+N4grC7JhVCKwHSh2VlaEfvZAYWPO6D9ZPh
+         YAnw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=[*@^]glez.cloud header.s=mail header.b=KCdW5ej+;
+       spf=pass (google.com: domain of bounces-136652878-soporte=glez.cloud[*@^]aa.d.sender-sib.com designates 185.41.28.128 as permitted sender) smtp.mailfrom="bounces-136652878-soporte=glez.cloud[*@^]aa.d.sender-sib.com"
+Return-Path: <bounces-136652878-soporte=glez.cloud[*@^]aa.d.sender-sib.com>
+Received: from aa.d.sender-sib.com (aa.d.sender-sib.com. [185.41.28.128])
+        by mx.google.com with ESMTPS id w22-20020aa7cb56000000b00425e2e653b6si17355000edt.440.2022.05.04.06.38.39
+        for <axarnet[*@^]glez.cloud>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Wed, 04 May 2022 06:38:39 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounces-136652878-soporte=glez.cloud[*@^]aa.d.sender-sib.com designates 185.41.28.128 as permitted sender) client-ip=185.41.28.128;
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=glez.cloud;
+ q=dns/txt; s=mail; bh=08hofk0u8KPwn94aKMY5/CSEAL+TFcBCQGJoRRf3HoI=;
+ h=from:reply-to:subject:date:to:mime-version:content-type:content-transfer-encoding:list-unsubscribe:x-csa-complaints:list-unsubscribe-post;
+        b=KCdW5ej+X3TUOu1O+lvCSfCKjLrIRFxYwUNLl1suzpJGUabNKf7LJsTZMhxWzu1q1ZmNnvw8tQ3X
+        AR+7ujSTpawsnvMfYQMkD1WFe7ZikRO1ym5LOnSVT2jbqR4LzmZy3SxoKfQarp4Pz78zLDCowuXO
+        DRQK2SJDA8gGEsDjLPo=
+X-Mailin-EID: MTM2NjUyODc4fmF4YXJuZXRAZ2xlei5jbG91ZH48MjAyMjA1MDQxNTM4Ljg4ODM0ODk4MDE5QHNtdHAtcmVsYXkubWFpbGluLmZyPn5hYS5kLnNlbmRlci1zaWIuY29t
+To: <axarnet[*@^]glez.cloud>
+Date: Wed, 04 May 2022 13:38:38 +0000
+Subject: [Catch-all] [GLEZ.CLOUD] Nuevo pedido #(51)
+Message-Id: <e7febc9f-bae2-45cb-92dc-3cfc5872ab2b[*@^]smtp-relay.sendinblue.com>
+Origin-messageId: <202205041538.88834898019[*@^]smtp-relay.mailin.fr>
+Content-Type: text/html; charset=utf-8
+Reply-To: customer[*@^]glez.cloud
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+X-sib-id: iVYj-zwwT1E0kUIlPeI6dU0AImxTSDKImIbfK7Pv82IpfpZQSqAttJbzYAcO7JkuRz1dW5Y3Sgp2aZx7AVfMN2L6SpkDUom7eo6FOifZ5UmviK2VJgIq-8gSn5b5p2kbLML7Z933k-7nNpQmXA-_D0fAoP7boJOXmBJgp_rrwQA
+X-CSA-Complaints: whitelist-complaints[*@^]eco.de
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+Feedback-ID: 185.41.28.128:3992163_-1:3992163:Sendinblue
+From: "GLEZ.CLOUD" <soporte[*@^]glez.cloud>
+List-Unsubscribe: <mailto:unsubscribe-t[*@^]aa.d.sender-sib.com?subject=unsub-MTM2NjUyODc4fmF4YXJuZXRAZ2xlei5jbG91ZH48MjAyMjA1MDQxNTM4Ljg4ODM0ODk4MDE5QHNtdHAtcmVsYXkubWFpbGluLmZyPn4iR0xFWi5DTE9VRCIgPHNvcG9ydGVAZ2xlei5jbG91ZD5-ZTdmZWJjOWYtYmFlMi00NWNiLTkyZGMtM2NmYzU4NzJhYjJi&body=MTM2NjUyODc4fmF4YXJuZXRAZ2xlei5jbG91ZH48MjAyMjA1MDQxNTM4Ljg4ODM0ODk4MDE5QHNtdHAtcmVsYXkubWFpbGluLmZyPn4iR0xFWi5DTE9VRCIgPHNvcG9ydGVAZ2xlei5jbG91ZD5-ZTdmZWJjOWYtYmFlMi00NWNiLTkyZGMtM2NmYzU4NzJhYjJi>, <https://djjcbgd.r.bh.d.sendibt3.com/tr/un/li/g-gkslAD7s_h9Ed1XkHK2DiAtMppvV_EV4saa704-3DM7uxx1aPav5okRv-ih91FlCTXnwPbhB9oH8HXvWKbspHrLYx2geK5OFvGkheVvLCv9izHjwKCJ_5wLdFZ2VKqh6joJK-1YaUBh5yi6neRV_NsC9Zxjx1Zs3Nj_BIErMAHSKA98h6B5MzQj3GHTmS06tAZWhKieHA_rImRfgbFfenXPYoEVAUNwelJsGWi36mmSAKCykBhPt3_RR10R84>
+X-Gm-Original-To: axarnet[*@^]glez.cloud
+
+<!DOCTYPE html>
+<html lang=3D=22es=22>
+<head>
+<meta http-equiv=3D=22Content-Type=22 content=3D=22text/html; =
+charset=3DUTF-8=22>
+<title>GLEZ.CLOUD</title>
+</head>
+<body leftmargin=3D=220=22 marginwidth=3D=220=22 topmargin=3D=220=22 =
+marginheight=3D=220=22 offset=3D=220=22 style=3D=22padding: 0;=22>
+		<div id=3D=22wrapper=22 dir=3D=22ltr=22 style=3D=22background-color: =
+#f7f7f7; margin: 0; padding: 70px 0; width: 100%; -webkit-text-size-adjust:=
+ none;=22>
+			<table border=3D=220=22 cellpadding=3D=220=22 cellspacing=3D=220=22 =
+height=3D=22100%=22 width=3D=22100%=22>
+<tr>
+<td align=3D=22center=22 valign=3D=22top=22>
+						<div id=3D=22template=5Fheader=5Fimage=22>
+													</div>
+						<table border=3D=220=22 cellpadding=3D=220=22 cellspacing=3D=220=22 =
+width=3D=22600=22 id=3D=22template=5Fcontainer=22 style=3D=22background-col=
+or: #ffffff; border: 1px solid #dedede; box-shadow: 0 1px 4px rgba(0, 0, 0,=
+ 0.1); border-radius: 3px;=22>
+<tr>
+<td align=3D=22center=22 valign=3D=22top=22>
+									<!-- Header -->
+									<table border=3D=220=22 cellpadding=3D=220=22 =
+cellspacing=3D=220=22 width=3D=22100%=22 id=3D=22template=5Fheader=22 =
+style=3D'background-color: #7f54b3; color: #ffffff; border-bottom: 0; =
+font-weight: bold; line-height: 100%; vertical-align: middle; font-family: =
+=22Helvetica Neue=22, Helvetica, Roboto, Arial, sans-serif; border-radius: =
+3px 3px 0 0;'><tr>
+<td id=3D=22header=5Fwrapper=22 style=3D=22padding: 36px 48px; display: =
+block;=22>
+												<h1 style=3D'font-family: =22Helvetica Neue=22, Helvetica, =
+Roboto, Arial, sans-serif; font-size: 30px; font-weight: 300; line-height: =
+150%; margin: 0; text-align: left; text-shadow: 0 1px 0 #9976c2; color: =
+#ffffff; background-color: inherit;'>Nuevo pedido: #51</h1>
+											</td>
+										</tr></table>
+<!-- End Header -->
+</td>
+							</tr>
+<tr>
+<td align=3D=22center=22 valign=3D=22top=22>
+									<!-- Body -->
+									<table border=3D=220=22 cellpadding=3D=220=22 =
+cellspacing=3D=220=22 width=3D=22600=22 id=3D=22template=5Fbody=22><tr>
+<td valign=3D=22top=22 id=3D=22body=5Fcontent=22 style=3D=22background-colo=
+r: #ffffff;=22>
+												<!-- Content -->
+												<table border=3D=220=22 cellpadding=3D=2220=22 =
+cellspacing=3D=220=22 width=3D=22100%=22><tr>
+<td valign=3D=22top=22 style=3D=22padding: 48px 48px 32px;=22>
+															<div id=3D=22body=5Fcontent=5Finner=22 style=3D'color: =
+#636363; font-family: =22Helvetica Neue=22, Helvetica, Roboto, Arial, =
+sans-serif; font-size: 14px; line-height: 150%; text-align: left;'>
+
+<p style=3D=22margin: 0 0 16px;=22>Has recibido el siguiente pedido de =
+Pablo Test:</p>
+
+<h2 style=3D'color: #7f54b3; display: block; font-family: =22Helvetica =
+Neue=22, Helvetica, Roboto, Arial, sans-serif; font-size: 18px; =
+font-weight: bold; line-height: 130%; margin: 0 0 18px; text-align: =
+left;'>
+	<a class=3D=22link=22 href=3D=22https://djjcbgd.r.bh.d.sendibt3.=
+com/tr/cl/eNhItmuKIC7a7KltsCsQpNNqZ=5F7DuQUVhNlDoSQGpl-HRLI7mOA75PNkHvwS0Pr=
+KJ-Ze-nrq09HrRvWnOUgSMw6VoLsCRKxy8xR4AQfiEH6n6e1bg29hYijstV6M98uZtFREsLTbDw=
+b40A0RslkYETrINB1EdovDV0sFyjKM-KkQCnmvQWt9bgjbVWYK3nMiQ30205dLsxzvIxChdNapi=
+iq=5FguD8y4uZK3E1Hgd20bsAmbY2UD9i5m35S74J0yYcDMuO-EnD5w0M3yHNKyEizpUiv6zmXY=
+h3LEcb=22 style=3D=22font-weight: normal; text-decoration: underline; =
+color: #7f54b3;=22>[Pedido #51]</a> (mayo 4, 2022)</h2>
+
+<div style=3D=22margin-bottom: 40px;=22>
+	<table class=3D=22td=22 cellspacing=3D=220=22 cellpadding=3D=226=22 =
+border=3D=221=22 style=3D=22color: #636363; border: 1px solid #e5e5e5; =
+vertical-align: middle; width: 100%; font-family: 'Helvetica Neue', =
+Helvetica, Roboto, Arial, sans-serif;=22>
+<thead><tr>
+<th class=3D=22td=22 scope=3D=22col=22 style=3D=22color: #636363; border: =
+1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: =
+left;=22>Producto</th>
+				<th class=3D=22td=22 scope=3D=22col=22 style=3D=22color: #636363; =
+border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; =
+text-align: left;=22>Cantidad</th>
+				<th class=3D=22td=22 scope=3D=22col=22 style=3D=22color: #636363; =
+border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; =
+text-align: left;=22>Precio</th>
+			</tr></thead>
+<tbody><tr class=3D=22order=5Fitem=22>
+<td class=3D=22td=22 style=3D=22color: #636363; border: 1px solid #e5e5e5; =
+padding: 12px; text-align: left; vertical-align: middle; font-family: =
+'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif; word-wrap: =
+break-word;=22>
+		Gesti=C3=B3n DNS - 1 a=C3=B1o		</td>
+		<td class=3D=22td=22 style=3D=22color: #636363; border: 1px solid =
+#e5e5e5; padding: 12px; text-align: left; vertical-align: middle; =
+font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;=22>
+			1		</td>
+		<td class=3D=22td=22 style=3D=22color: #636363; border: 1px solid =
+#e5e5e5; padding: 12px; text-align: left; vertical-align: middle; =
+font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;=22>
+			<span class=3D=22woocommerce-Price-amount amount=22>9,99=C2=A0<span =
+class=3D=22woocommerce-Price-currencySymbol=22>=E2=82=AC</span></span>		=
+</td>
+	</tr></tbody>
+<tfoot>
+<tr>
+<th class=3D=22td=22 scope=3D=22row=22 colspan=3D=222=22 style=3D=22color: =
+#636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; =
+text-align: left; border-top-width: 4px;=22>Subtotal:</th>
+						<td class=3D=22td=22 style=3D=22color: #636363; border: 1px solid =
+#e5e5e5; vertical-align: middle; padding: 12px; text-align: left; =
+border-top-width: 4px;=22><span class=3D=22woocommerce-Price-amount =
+amount=22>9,99=C2=A0<span class=3D=22woocommerce-Price-currencySymbol=22>=
+=E2=82=AC</span></span></td>
+					</tr>
+<tr>
+<th class=3D=22td=22 scope=3D=22row=22 colspan=3D=222=22 style=3D=22color: =
+#636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; =
+text-align: left;=22>M=C3=A9todo de pago:</th>
+						<td class=3D=22td=22 style=3D=22color: #636363; border: 1px solid =
+#e5e5e5; vertical-align: middle; padding: 12px; text-align: =
+left;=22>Transferencia bancaria directa</td>
+					</tr>
+<tr>
+<th class=3D=22td=22 scope=3D=22row=22 colspan=3D=222=22 style=3D=22color: =
+#636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; =
+text-align: left;=22>Total:</th>
+						<td class=3D=22td=22 style=3D=22color: #636363; border: 1px solid =
+#e5e5e5; vertical-align: middle; padding: 12px; text-align: left;=22><span =
+class=3D=22woocommerce-Price-amount amount=22>9,99=C2=A0<span =
+class=3D=22woocommerce-Price-currencySymbol=22>=E2=82=AC</span></span></td>=
+
+					</tr>
+</tfoot>
+</table>
+</div>
+
+
+<table id=3D=22addresses=22 cellspacing=3D=220=22 cellpadding=3D=220=22 =
+border=3D=220=22 style=3D=22width: 100%; vertical-align: top; =
+margin-bottom: 40px; padding: 0;=22><tr>
+<td valign=3D=22top=22 width=3D=2250%=22 style=3D=22text-align: left; =
+font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif; =
+border: 0; padding: 0;=22>
+			<h2 style=3D'color: #7f54b3; display: block; font-family: =22Helvetica =
+Neue=22, Helvetica, Roboto, Arial, sans-serif; font-size: 18px; =
+font-weight: bold; line-height: 130%; margin: 0 0 18px; text-align: =
+left;'>Direcci=C3=B3n de facturaci=C3=B3n</h2>
+
+			<address class=3D=22address=22 style=3D=22padding: 12px; color: #636363;=
+ border: 1px solid #e5e5e5;=22>
+				Pablo Test<br>Calle test<br>28001 Madrid<br>Madrid									<br><a =
+href=3D=22tel:6633225588=22 style=3D=22color: #7f54b3; font-weight: normal;=
+ text-decoration: underline;=22>6633225588</a>													=
+<br>customer[*@^]glez.cloud							</address>
+		</td>
+			</tr></table>
+<p style=3D=22margin: 0 0 16px;=22>Enhorabuena por la venta.</p>
+															</div>
+														</td>
+													</tr></table>
+<!-- End Content -->
+</td>
+										</tr></table>
+<!-- End Body -->
+</td>
+							</tr>
+</table>
+</td>
+				</tr>
+<tr>
+<td align=3D=22center=22 valign=3D=22top=22>
+						<!-- Footer -->
+						<table border=3D=220=22 cellpadding=3D=2210=22 cellspacing=3D=220=22 =
+width=3D=22600=22 id=3D=22template=5Ffooter=22><tr>
+<td valign=3D=22top=22 style=3D=22padding: 0; border-radius: 6px;=22>
+									<table border=3D=220=22 cellpadding=3D=2210=22 =
+cellspacing=3D=220=22 width=3D=22100%=22><tr>
+<td colspan=3D=222=22 valign=3D=22middle=22 id=3D=22credit=22 =
+style=3D'border-radius: 6px; border: 0; color: #8a8a8a; font-family: =
+=22Helvetica Neue=22, Helvetica, Roboto, Arial, sans-serif; font-size: =
+12px; line-height: 150%; text-align: center; padding: 24px 0;'>
+												<p style=3D=22margin: 0 0 16px;=22>GLEZ.CLOUD =E2=80=94 Built =
+with <a href=3D=22https://djjcbgd.r.bh.d.sendibt3.com/tr/cl/i1pwaizy24o3OU6=
+5QkWL-ZmacxBr3URXB=5FvgSS0BCJ16sG7ulRZhlg9hy6jo1MHm1HbXbIdr2Z3LZPumhi-Cbv1c=
+=5FrFZJ8Y5EJs0NDOFYRF3c=5FcfGXhXVhFOOwmTMR=5F49qgBRUrJXua37ELMuWiN5ZBLf7Khp=
+WK5fTiQlgqjKk5qNCWttlGXcIYrTUk4MCuNNfBjGyPTL5sFs0SerX-UpJ0fN61RbP5h=22 =
+style=3D=22color: #7f54b3; font-weight: normal; text-decoration: =
+underline;=22>WooCommerce</a></p>
+											</td>
+										</tr></table>
+</td>
+							</tr></table>
+<!-- End Footer -->
+</td>
+				</tr>
+</table>
+</div>
+	<img width=3D=221=22 height=3D=221=22 src=3D=22https://djjcbgd.r.bh.d.=
+sendibt3.com/tr/op/q5oGhcWTXSdSi66LgXPAj3sU88-CdtlMYtA=5FjOxkvCxFn3103QIiFd=
+tZcv40ww-kziO5vTFRFO6IVq5LvG4d4NTA=5FiPZmCcm9OIQM6kJP1hX5YMwPluvzfrbT2QUtEh=
+JUjmPmIv0syk86amoEyrpEvuSjsVt=5FkGgKry87i=5FwHmXR=22 alt=3D=22=22 =
+/></body>
+</html>
+
