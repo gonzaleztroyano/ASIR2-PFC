@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Amplía las imágenes del Proyecto Fin de Ciclo">
+    <link rel="icon" type="image/png" href="camera.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imágenes PFC // 📷 - 🔍</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="script.js"></script> 
+</head>
+<body>
+    <h1>Imágenes PFC <br> 📷 - 🔍</h1>
+    <div id="wrapper">
+        <div id="entrada">
+            <form>
+                <p>
+                    <label for="pagina">Número de página:</label>
+                    <input type="number" name="pagina" id="pagina" placeholder="Ejemplo: 101" tabindex="1" required step="1" value="18"> <br/>
+                </p>
+                <p>
+                    <label for="img_pag">Número de imagen:</label>
+                    <input type="number" name="img_pag" id="img_pag" placeholder="Ejemplo: 3" tabindex="2" required step="1" value="1"> <br/>
+                </p>
+
+                <br/><br/>
+                <input type="button" value="Ampliar imagen" tabindex="5" id="button_ver" >
+            </form>
+        </div>
+        <br>
+        <div id="resultado">
+            <img src="media/0/0.png" alt="Imagen número 0 de la página 0." id="img_result"onerror="this.src='media/0/error.png';">
+        </div>
+    </div>
+    <div class="float"><p> CC BY 4.0 <br> Pablo González Troyano </p></div>
+</body>
+</html>

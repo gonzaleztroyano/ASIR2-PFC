@@ -1,0 +1,76 @@
+Return-Path: <pablo\.\gonzalez XXX [[@]]] educa\.\madrid\.\org>
+X-Original-To: info[[@]]xn--ahorrams-fza.es
+Delivered-To: info[[@]]xn--ahorrams-fza.es
+Received: from mx01.puc.rediris.es (outbound5mad.lav.puc.rediris.es [130.206.19.148])
+	by compassionate-curran.5-175-45-212.plesk.page (Postfix) with ESMTPS id 92E4982F93
+	for <info[[@]]xn--ahorrams-fza.es>; Fri,  6 May 2022 13:03:30 +0200 (CEST)
+Authentication-Results: plesk.glez.cloud;
+	dmarc=pass (p=REJECT sp=NONE) smtp.from=educa.madrid.org header.from=educa.madrid.org;
+	dkim=pass header.d=educa.madrid.org;
+	spf=pass (sender IP is 130.206.19.148) smtp.mailfrom=pablo\.\gonzalez XXX [[@]]] educa\.\madrid\.\org smtp.helo=mx01.puc.rediris.es
+Received-SPF: pass (plesk.glez.cloud: domain of educa.madrid.org designates 130.206.19.148 as permitted sender) client-ip=130.206.19.148; envelope-from=pablo\.\gonzalez XXX [[@]]] educa\.\madrid\.\org; helo=mx01.puc.rediris.es;
+Authentication-Results: mx01.puc.rediris.es;
+	spf=pass (rediris.es: domain of pablo\.\gonzalez XXX [[@]]] educa\.\madrid\.\org designates 193.146.123.99 as permitted sender) smtp.mailfrom=pablo\.\gonzalez XXX [[@]]] educa\.\madrid\.\org
+Received: from smtp.educa.madrid.org ([193.146.123.99])
+	by mx01.puc.rediris.es  with ESMTP id 246B3ULo011528-246B3ULp011528
+	for <info[[@]]xn--ahorrams-fza.es>; Fri, 6 May 2022 13:03:30 +0200
+Received: (qmail 7712 invoked from network); 6 May 2022 11:03:29 -0000
+Received: from emvrcubeweb01.educa.madrid.org (HELO WEBMAIL) ([172.16.2.181])
+          (envelope-sender <pablo\.\gonzalez XXX [[@]]] educa\.\madrid\.\org>)
+          by 0 (qmail-ldap-1.03) with SMTP
+          for <info@xn--ahorrams-fza.es>; 6 May 2022 11:03:29 -0000
+MIME-Version: 1.0
+Date: Fri, 06 May 2022 13:03:29 +0200
+From: =?UTF-8?Q?Pablo_Gonz=C3=A1lez_Troyano?=
+ <pablo\.\gonzalez XXX [[@]]] educa\.\madrid\.\org>
+To: info[[@]]xn--ahorrams-fza.es
+Subject: PRUEBA ENVIO
+User-Agent: CorreoWeb EducaMadrid
+Message-ID: <17697d3c5c33f722e6b458604c9fbf8f@educa.madrid.org>
+X-Sender: pablo\.\gonzalez XXX [[@]]] educa\.\madrid\.\org
+Organization: Comunidad de Madrid. EducaMadrid.
+X-Remote-Browser: Mozilla/5.0 (X11; CrOS x86_64 14526.89.0) AppleWebKit/537.36
+ (KHTML, like Gecko) Chrome/100.0.4896.133 Safari/537.36
+X-Originating-IP: [79.116.1.157]
+X-Webmail-Server: 172.16.2.181
+Content-Type: multipart/alternative;
+ boundary="=_c6f958ea275aa61f234210d1ed75fe93"
+X-FE-Policy-ID: 23:14:2:educa.madrid.org
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; d=educa.madrid.org; s=dkim_educamadrid; c=relaxed/relaxed;
+ h=mime-version:date:from:to:subject:message-id:content-type;
+ bh=p+I+BArBMd8dSkDKaCCFDj1/nkdqWHoUR+1qCg1YroU=;
+ b=oe+fsPmgJa7Km5FbPgAvVHTB6BKEeB3GbdljSu7LRfCzam2aYcKE4kzqdDlM7/DwGTJc8a0Nx51f
+	4TaK718n6do5ov9EmkKK68iiWVlgb8NV0V7lA2ri6t3slyozlTTfqo4/xFWEFBA3edYdDjugAHst
+	8V8EHfh2FU6YAfw5fIyLJyIoUUd4TcDe3nAj04Wa+KmiRcy3Ws+o4myJ1nOZZt26eAjXhi0f3MsB
+	Tp+LTK0Llk8Q+eIQ9rXDrLq2LU/+qzZDlresx95kosmILaabnKxuLlC4BJR/hzVDinzxnRn3pXo1
+	TE3HimttUgG/Rpjd56e0aBqbhpAVa8LUHgGyyA==
+
+--=_c6f958ea275aa61f234210d1ed75fe93
+Content-Transfer-Encoding: 8bit
+Content-Type: text/plain; charset=UTF-8;
+ format=flowed
+
+HOLAAA
+
+---
+PABLO GONZÁLEZ TROYANO
+pablo\.\gonzalez XXX [[@]]] educa\.\madrid\.\org
+2º ASIR
+IES Villablanca, Madrid
+--=_c6f958ea275aa61f234210d1ed75fe93
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=UTF-8
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3DUTF-8" /></head><body style=3D'font-size: 10pt; font-family: Arial,Helve=
+tica,sans-serif'>
+<p>HOLAAA</p>
+<div id=3D"signature">
+<div class=3D"pre" style=3D"margin: 0; padding: 0; font-family: monospace">=
+---<br />PABLO GONZ&Aacute;LEZ TROYANO<br /><a href=3D"mailto:pablo\.\gonzale=
+z [[@]]] educa\.\madrid\.\org">pablo\.\gonzalez [[@]]] educa\.\madrid\.\org</a><br />2&ordm; =
+ASIR<br />IES Villablanca, Madrid</div>
+</div>
+</body></html>
+
+--=_c6f958ea275aa61f234210d1ed75fe93--

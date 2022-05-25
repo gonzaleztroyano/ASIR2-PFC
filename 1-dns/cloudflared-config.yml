@@ -1,0 +1,13 @@
+tunnel: 8f7a6e18-e9f0-4b7a-a384-c8c27c7a4ba5
+credentials-file: /root/.cloudflared/8f7a6e18-e9f0-4b7a-a384-c8c27c7a4ba5.json
+
+ingress:
+  - hostname: ssh-ns1.glez.cloud
+    service: ssh://localhost:22
+  - hostname: portainer-ns1.glez.cloud
+    service: http://localhost:9000
+  - hostname: manage-dns.glez.cloud
+    service: http://localhost:80
+  - hostname: manage-dns-info.glez.cloud
+    service: http://localhost:8081
+  - service: http_status:404

@@ -1,0 +1,50 @@
+Received: (qmail 26254 invoked by uid 7007); 6 May 2022 11:09:07 -0000
+Received: from unknown ([192.168.2.109])
+          by 0 (qmail-ldap-1.03) with QMQP; 6 May 2022 11:09:07 -0000
+Delivered-To: CLUSTERHOST emvav01.educa.madrid.org pablo\.gonzalezXXX[[@]]educa\.\madrid\.org
+Received: (qmail 20398 invoked from network); 6 May 2022 11:09:07 -0000
+Received: from unknown (HELO mx01.puc.rediris.es) ([130.206.19.148])
+          (envelope-sender <info[[@]]xn--ahorrams-fza.es>)
+          by 0 (qmail-ldap-1.03) with SMTP
+          for <pablo\.gonzalezXXX[[@]]educa\.\madrid\.org>; 6 May 2022 11:09:07 -0000
+Authentication-Results: mx01.puc.rediris.es;
+	spf=pass (rediris.es: domain of info[[@]]xn--ahorrams-fza.es designates 5.175.45.212 as permitted sender) smtp.mailfrom=info[[@]]xn--ahorrams-fza.es
+	dmarc=pass header.from=xn--ahorrams-fza.es
+Received: from compassionate-curran.5-175-45-212.plesk.page (glez-cloud.vservers.es [5.175.45.212])
+	by mx01.puc.rediris.es  with ESMTP id 246B95ng017592-246B95ni017592
+	(version=TLSv1.3 cipher=TLS_AES_256_GCM_SHA384 bits=256 verify=NO)
+	for <pablo\.gonzalezXXX[[@]]educa\.\madrid\.org>; Fri, 6 May 2022 13:09:05 +0200
+Received: from webmail.xn--ahorrams-fza.es (localhost.localdomain [IPv6:::1])
+	by compassionate-curran.5-175-45-212.plesk.page (Postfix) with ESMTPSA id EA16782F93;
+	Fri,  6 May 2022 13:09:04 +0200 (CEST)
+Authentication-Results: plesk.glez.cloud;
+        spf=pass (sender IP is ::1) smtp.mailfrom=info[[@]]xn--ahorrams-fza.es smtp.helo=webmail.xn--ahorrams-fza.es
+Received-SPF: pass (plesk.glez.cloud: connection is authenticated)
+MIME-Version: 1.0
+Date: Fri, 06 May 2022 13:09:04 +0200
+From: info[[@]]xn--ahorrams-fza.es
+To: =?UTF-8?Q?Pablo_Gonz=C3=A1lez_Troyano?=
+ <pablo\.gonzalezXXX[[@]]educa\.\madrid\.org>
+Cc: info[[@]]xn--ahorrams-fza.es
+Subject: Re: PRUEBA ENVIO
+In-Reply-To: <17697d3c5c33f722e6b458604c9fbf8f[[@]]educa.madrid.org>
+References: <17697d3c5c33f722e6b458604c9fbf8f[[@]]educa.madrid.org>
+User-Agent: Roundcube Webmail/1.4.13
+Message-ID: <a73d28e23c448311b7a6f4817327a07f[[@]]xn--ahorrams-fza.es>
+X-Sender: info[[@]]xn--ahorrams-fza.es
+Content-Type: text/plain; charset=UTF-8;
+ format=flowed
+Content-Transfer-Encoding: 8bit
+X-FEAS-SPF: spf-result=pass, ip=5.175.45.212, helo=compassionate-curran.5-175-45-212.plesk.page, mailFrom=info[[@]]xn--ahorrams-fza.es
+X-FE-Policy-ID: 21:3:1:educa.madrid.org
+
+Buenas, buenas!
+
+El 2022-05-06 13:03, Pablo González Troyano escribió:
+> HOLAAA
+> 
+> ---
+> PABLO GONZÁLEZ TROYANO
+> pablo\.gonzalezXXX[[@]]educa\.\madrid\.org
+> 2º ASIR
+> IES Villablanca, Madrid
