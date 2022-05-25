@@ -26,3 +26,21 @@ A su vez, es neceario definir los siguientes enlaces:
  - https://pfc.gonzaleztroyano.es/slides --> https://pfc.gonzaleztroyano.es/PFC-ASIR-PabloGonzalezTroyano-slides.pdf
  - https://pfc.gonzaleztroyano.es/pfc    --> https://pfc.gonzaleztroyano.es/PFC-ASIR-PabloGonzalezTroyano.pdf
  - https://pfc.gonzaleztroyano.es/pdf    --> https://pfc.gonzaleztroyano.es/PFC-ASIR-PabloGonzalezTroyano.pdf
+
+# ZIP + Files
+Eliminar carpeta ZIP:
+```
+rm image-viewer/PFC-Image-Viewer-media.zip
+```
+
+Disponer los archivos descargables:
+```
+# Estando en 8-public
+cp ../PFC-ASIR-PabloGonzalezTroyano* .
+```
+
+# Firebase:
+
+```
+firebase deploy --only hosting:pfc-gonzaleztroyano
+```

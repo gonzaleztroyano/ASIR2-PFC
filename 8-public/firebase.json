@@ -1,0 +1,25 @@
+{
+  "hosting": {
+    "site": "pfc-gonzaleztroyano",
+    "public": "8-public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "redirects": [ {
+        "source": "/slides",
+        "destination": "/PFC-ASIR-PabloGonzalezTroyano-slides.pdf",
+        "type": 301
+        },
+        {"source": "/pfc",
+        "destination": "/PFC-ASIR-PabloGonzalezTroyano.pdf",
+        "type": 301
+        },
+        {"source": "/pdf",
+            "destination": "/PFC-ASIR-PabloGonzalezTroyano.pdf",
+            "type": 301
+            }  
+    ]
+  }
+}

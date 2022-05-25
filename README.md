@@ -11,9 +11,9 @@ Se recomienda acceder a la página web con toda la documentación desde [**pfc.g
 Puede descargar el documento final desde este mismo repositorio: [PFC-ASIR-PabloGonzalezTroyano.pdf](./PFC-ASIR-PabloGonzalezTroyano.pdf); así como las diapositivas realizadas para la presentación: [PFC-ASIR-PabloGonzalezTroyano-slides.pdf](./PFC-ASIR-PabloGonzalezTroyano-slides.pdf). 
 
 ## Entregables finales
-|           Documento final del Proyecto         |                 Diapositivas presntación               |
-| :--------------------------------------------: | :----------------------------------------------------: |
-| [Acceder](./PFC-ASIR-PabloGonzalezTroyano.pdf) |  [Acceder](./PFC-ASIR-PabloGonzalezTroyano-slides.pdf) |
+|           Documento final del Proyecto         |                 Diapositivas presentación               |
+| :--------------------------------------------: | :-----------------------------------------------------: |
+| [Acceder](./PFC-ASIR-PabloGonzalezTroyano.pdf) |  [Acceder](./PFC-ASIR-PabloGonzalezTroyano-slides.pdf)  |
 
 
 ## Contenido del repositorio
