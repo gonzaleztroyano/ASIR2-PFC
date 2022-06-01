@@ -11,14 +11,14 @@ Se recomienda acceder a la página web con toda la documentación desde [**pfc.g
 Puede descargar el documento final desde este mismo repositorio: [PFC-ASIR-PabloGonzalezTroyano.pdf](./PFC-ASIR-PabloGonzalezTroyano.pdf); así como las diapositivas realizadas para la presentación: [PFC-ASIR-PabloGonzalezTroyano-slides.pdf](./PFC-ASIR-PabloGonzalezTroyano-slides.pdf). 
 
 ## Entregables finales
-|           Documento final del Proyecto         |                 Diapositivas presentación               |
-| :--------------------------------------------: | :-----------------------------------------------------: |
-| [Acceder](./PFC-ASIR-PabloGonzalezTroyano.pdf) |  [Acceder](./PFC-ASIR-PabloGonzalezTroyano-slides.pdf)  |
+|                        Documento final del Proyecto                         |                              Diapositivas presentación                               |
+| :-------------------------------------------------------------------------: | :----------------------------------------------------------------------------------: |
+| [Acceder](https://pfc.gonzaleztroyano.es/PFC-ASIR-PabloGonzalezTroyano.pdf) |  [Acceder](https://pfc.gonzaleztroyano.es/PFC-ASIR-PabloGonzalezTroyano-slides.pdf)  |
 
 
 ## Contenido del repositorio
 
- - [1-dns](./1-dns/): Archivos de configuración y pruebas relacionadas con el servidor de OpenDNS.
+ - [1-dns](./1-dns/): Archivos de configuración y pruebas relacionadas con el servidor de PowerDNS.
  - [2-mail](./2-mail/): Archivos de configuración y pruebas relacionadas con el servidor de correo electrónico basado en [Mailcow-dockerized](https://github.com/mailcow/mailcow-dockerized).
  - [3-webservice](https://github.com/gonzaleztroyano/ASIR2-IAW-SCRIPT): Scripts desarrollados en Bash/Shell para la gestión de los sitios y usuarios de un servidor web. 
  - [3-webservice-evidences](./3-webservice-evidences/): Pruebas relacionadas con los scripts de gestión del servidor. 
