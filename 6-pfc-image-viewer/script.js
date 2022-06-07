@@ -8,5 +8,9 @@ window.addEventListener("load",function(){
     button_ver.addEventListener("click", function(){ 
         img_result.src = base_path_images + pagina.value + "/" + img_pag.value + ".png"     
         img_result.alt = "Imagen número " + pagina.value + " de la página " + img_pag.value
+        gtag('event', 'pfc_image_view', {
+            'page_number': pagina.value,
+             'image_number': img_pag.value
+   });
     })
 })
